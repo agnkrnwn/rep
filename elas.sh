@@ -12,3 +12,9 @@ sudo systemctl status elasticsearch.service
 echo "Waiting for ElasticSearch to boot up..."
 sleep 20
 curl -XGET 'localhost:9200/?pretty'
+sudo apt-get install logstash
+sudo apt-get install kibana
+sudo systemctl enable kibana
+sudo systemctl start kibana
+sudo systemctl enable logstash
+sudo systemctl start logstash
